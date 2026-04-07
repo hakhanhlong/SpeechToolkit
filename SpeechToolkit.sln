@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechToTextDataPreparingWindowApplication", "SpeechToTextDataPreparingWindowApplication\SpeechToTextDataPreparingWindowApplication.csproj", "{5EAD1961-1062-4757-89E6-C6D504F4F3A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultilities", "Ultilities\Ultilities.csproj", "{32B9C536-4ABA-4359-AE89-2208E2C3BF1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextTranslateDataPreparingConsoleApplication", "TextTranslateDataPreparingConsoleApplication\TextTranslateDataPreparingConsoleApplication.csproj", "{A8C916F5-08F4-4620-9AE5-7678B61E346B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EAD1961-1062-4757-89E6-C6D504F4F3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAD1961-1062-4757-89E6-C6D504F4F3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAD1961-1062-4757-89E6-C6D504F4F3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAD1961-1062-4757-89E6-C6D504F4F3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B9C536-4ABA-4359-AE89-2208E2C3BF1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B9C536-4ABA-4359-AE89-2208E2C3BF1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B9C536-4ABA-4359-AE89-2208E2C3BF1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B9C536-4ABA-4359-AE89-2208E2C3BF1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8C916F5-08F4-4620-9AE5-7678B61E346B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8C916F5-08F4-4620-9AE5-7678B61E346B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8C916F5-08F4-4620-9AE5-7678B61E346B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8C916F5-08F4-4620-9AE5-7678B61E346B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E32EBC77-1A45-48D5-8D4C-2FB402DDEC11}
+	EndGlobalSection
+EndGlobal
