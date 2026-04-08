@@ -1,5 +1,6 @@
 ﻿using BlingFire;
 using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.Connectors.OpenAI;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -53,7 +54,7 @@ namespace TranslationTaiDamAlignmentConsoleApplication
             Console.OutputEncoding = Encoding.UTF8;
 
             //string modelId = "translategemma:27b"; // Thay đổi theo model bạn đang chạy trên Ollama
-            string modelId = "translategemma:12b"; // Thay đổi theo model bạn đang chạy trên Ollama
+            string modelId = "translategemma:27b"; // Thay đổi theo model bạn đang chạy trên Ollama
             string ollamaEndpoint = "http://localhost:11434/v1"; // Endpoint tương thích chuẩn OpenAI của Ollama
 
             var handler = new HttpClientHandler();
@@ -133,7 +134,14 @@ YÊU CẦU BẮT BUỘC:
 - Giữ nguyên không thay đổi các câu tiếng Tai Dam (Thái Đen)
 - Mỗi object có 4 keys: ""id"", ""tai_dam"", ""english"", ""vietnamese"".
 ";
-            var arguments = new KernelArguments { { "input", jsonInput } };
+
+            var executionSettings = new OpenAIPromptExecutionSettings
+            {
+                Temperature = 1.0, // Ép tính nhất quán, giảm khả năng tự sinh thinking dài dòng
+                TopP = 0.95
+            };
+
+            var arguments = new KernelArguments(executionSettings) { { "input", jsonInput } };
 
             for (int attempt = 1; attempt <= MAX_RETRIES; attempt++)
             {
